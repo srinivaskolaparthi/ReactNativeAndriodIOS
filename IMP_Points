@@ -1,0 +1,3 @@
+1)React Native runs the JavaScript code in a separate thread, so the user interface does not block and animations should be silky and 
+smooth.
+2)
