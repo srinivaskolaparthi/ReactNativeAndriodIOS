@@ -1,0 +1,23 @@
+What is bundle?
+A Web Essentials bundle file is a recipe for grouping, and usually compressing, a set of files of the same type to limit the number and 
+the amout the data to be downloaded by the browser.
+
+Web Essentials offers two bundling types:
+----------------------------------------
+.bundle : for CSS and JS files
+For CSS, it outputs a XML bundle recipe file, a destination CSS file and a minified version of source if you turn on the minify 
+option on the recipe.
+For JavaScript files, it outputs a destination JS file, a minified version of sources and a source-map of that min.
+
+.sprite : for images (PNG, JPG and GIF). It generates a sprite image, CSS with example code for all the possible coordinates 
+in background property, LESS and SASS files with mixins holding the same background properties and a custom map file (JSON) with all those coordinates.
+
+Tools for bundling assets come in a variety of shapes and sizes:
+------------------------------------------------------------------
+Browserify
+jspm
+Webpack
+Rollup
+Brunch / Brocolli
+Sprockets
+Build your own with Gulp / Grunt
