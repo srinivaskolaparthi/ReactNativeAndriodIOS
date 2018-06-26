@@ -1,0 +1,10 @@
+Scaffolding:
+----------------------
+npm install -g react-native-cli
+react-native init AwesomeApp
+----------------
+Expo:
+npm install exp --global
+exp init my-new-project
+cd my-new-project
+exp start
