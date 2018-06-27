@@ -31,3 +31,14 @@ Mobile apps run on different devices equipped with very different hardware (syst
 With these factors in mind, it's important to understand that loading a given app on an LG G4 (5.5'') with 515 PPIwould be different from a CPU, battery usage, and performance (response time) perspective than loading an app on an iPhone 6S Plus (also 5.5''), which has a lower 401 PPI (and also uses a different screen technology). It is likely that the refresh rate of the screen, as well as the battery stretch on the LG, will be different than the iPhone’s. GPU and other hardware factors will also contribute to the variance in performance and power consumption. 
 
 With such a large, fragmented market, developers and testers ought to be thinking of the end-user experience, which is often impacted by app performance, visuals, usability, and robustness. Knowing the app's benchmark performance on a variety of devices, which cover most of the above families, is a good step toward having the right test coverage for your mobile or responsive web app. 
+
+RETINA VS NON RETINA in IOS:
+>>The first difference between these two is Retina has a higher resolution than non-retina macbook pro. Retina macbook pro has resolution of 2560p while non-retina has a resolution of 1280x800. More resolution means the display is more costly and more sharp than the non-retina macbook pro.
+
+>>The second is Retina mbp is equipped by flash drive while non-retina version uses conventional hard-disk. So retina is faster than non-retina.
+
+>>Retina MBP uses the latest intel's haswell processor with iris graphics while non-retina MBP uses the intel's HD graphics. So retina is more higher in terms of graphics quality.
+
+>>Retina MBP is slim as compared to Non Retina MBP. Non retina MBP uses the old optical drive while Retina MBP eliminates it. So slim and lighter than Non Retina version.
+
+>>And the last but not the least Retina is costlier than Non retina MBP.
