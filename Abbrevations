@@ -1,0 +1,33 @@
+
+DP or DIP---->Density Independent Pixels
+DPI--->Dots Per Inch
+HDPI--->High dots Per Inch
+PPI-->Pixel Per Inch
+MDPI – Medium Dots Per Inch
+XHDPI – Extra High Dots Per Inch
+XXHDPI – Extra Extra High Dots Per Inch
+XXXHDPI – Extra Extra Extra High Dots Per Inch
+HD--->High Definition
+------------------------------------------------
+
+320dp: a typical phone screen (240x320 ldpi, 320x480 mdpi, 480x800 hdpi, etc).  
+480dp: a tweener tablet like the Streak (480x800 mdpi).  
+600dp: a 7” tablet (600x1024 mdpi).  
+720dp: a 10” tablet (720x1280 mdpi, 800x1280 mdpi, etc).
+
+----------------------------------------------
+Pixel Density:
+The screen density is quoted as Pixels Per Inch, PPI, and is the number of pixels that fit into an inch. 
+The higher the number then the sharper images look on the display, therefore consumers consider a high PPI figure an 
+advantage when buying a device. Sometimes the figure is quoted as Dots Per Inch, DPI, though the use of DPI is confusing 
+as it comes from printing terminology, and it can refer to the sensitivity of the sensors in digital scanners and digital
+cameras. For Android screens when it comes to PPI vs. DPI use PPI and leave DPI to refer to printers, where it is really a 
+different measurement (because the dots needed to produce high quality images on paper are of greater density).
+
+----------------------------------------------------
+Why Do PPI and Screen Sizes Matter?
+Mobile apps run on different devices equipped with very different hardware (systems on chip). These devices therefore have a varied amount of CPU as well as battery types. It impacts their performance and other quality related factors. 
+
+With these factors in mind, it's important to understand that loading a given app on an LG G4 (5.5'') with 515 PPIwould be different from a CPU, battery usage, and performance (response time) perspective than loading an app on an iPhone 6S Plus (also 5.5''), which has a lower 401 PPI (and also uses a different screen technology). It is likely that the refresh rate of the screen, as well as the battery stretch on the LG, will be different than the iPhone’s. GPU and other hardware factors will also contribute to the variance in performance and power consumption. 
+
+With such a large, fragmented market, developers and testers ought to be thinking of the end-user experience, which is often impacted by app performance, visuals, usability, and robustness. Knowing the app's benchmark performance on a variety of devices, which cover most of the above families, is a good step toward having the right test coverage for your mobile or responsive web app. 
