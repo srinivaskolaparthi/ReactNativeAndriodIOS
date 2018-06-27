@@ -1,0 +1,16 @@
+PACKAGER CAN’T LISTEN ON PORT 8081 – $ REACT-NATIVE START –PORT=8088
+I experience this error Packager can’t listen on port 8081 – $react-native start-port=8088 because I have an existing connection with a command line interface and I was trying to connect again using another CLI.
+
+This can also happen if another process or software is using that port.
+---------------------------------
+REACT NATIVE ERROR CANNOT FIND MODULE ‘./ASSETS/EMPTY-MODULE.JS’
+The react native error cannot find module ‘./assets/empty-module.js’ usually occur when the server is not running.
+You can solve this issue by starting the server using the command – react-native start
+---------------------------------
+REACT NATIVE MISMATCH ERROR: JAVASCRIPT VERSION: 0.50.3 NATIVE VERSION 0.49.5
+The error message in this situation is easy to understand. This normally happens when you update your react native version or when you use framework or module that contain a lower version of Javascript than react native.
+1. One option is to downgrade your React Native version that is compatible with the native version.
+2. You can upgrade all your dependencies
+------------------------------------
+
+ 
