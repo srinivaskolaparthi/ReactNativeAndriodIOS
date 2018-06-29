@@ -1,3 +1,5 @@
 1)React Native runs the JavaScript code in a separate thread, so the user interface does not block and animations should be silky and 
 smooth.
-2)
+2)Kill Port No:8081 while running Metro Bundler:
+ netstat -ano |findstr:<yourportno>
+ taskkill/PID <pidno> /F
