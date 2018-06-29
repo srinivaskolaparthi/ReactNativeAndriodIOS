@@ -1,0 +1,13 @@
+View logs for your iPhone:
+brew install libimobiledevice
+Plug your phone in
+idevicepair pair
+Press accept on your device
+Run idevicesyslog
+
+----------------------------------------------------
+
+View logs from Android device or emulator
+Ensure Android SDK is installed
+Ensure that USB debugging is enabled on your device (not necessary for emulator).
+Run adb logcat
