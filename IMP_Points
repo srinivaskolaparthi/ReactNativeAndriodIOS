@@ -1,5 +1,35 @@
+
 1)React Native runs the JavaScript code in a separate thread, so the user interface does not block and animations should be silky and 
 smooth.
 2)Kill Port No:8081 while running Metro Bundler:
  netstat -ano |findstr:<yourportno>
  taskkill/PID <pidno> /F
+3)Enabling Proguard to reduce the size of the APK (optional)
+Proguard is a tool that can slightly reduce the size of the APK. It does this by stripping parts of the React Native Java bytecode (and its dependencies) that your app is not using.
+
+IMPORTANT: Make sure to thoroughly test your app if you've enabled Proguard. Proguard often requires configuration specific to each native library you're using. See app/proguard-rules.pro.
+
+To enable Proguard, edit android/app/build.gradle:
+
+/**
+ * Run Proguard to shrink the Java bytecode in release builds.
+ */
+def enableProguardInReleaseBuilds = true
+
+4)Split APKs by ABI to reduce file size
+By default, the generated APK has the native code for both x86 and ARMv7a CPU architectures. This makes it easier to share APKs that run on almost all Android devices. However, this has the downside that there will be some unused native code on any device, leading to unnecessarily bigger APKs.
+
+You can create an APK for each CPU by changing the following line in android/app/build.gradle:
+
+- def enableSeparateBuildPerCPUArchitecture = false
++ def enableSeparateBuildPerCPUArchitecture = true
+Upload both these files to markets which support device targetting, such as Google Play and Amazon AppStore and the users will automatically get the appropriate APK. If you want to upload to other markets such as APKFiles, which do not support multiple APKs for a single app, change the following line as well to create the default universal APK with binaries for both CPUs.
+
+- universalApk false  // If true, also generate a universal APK
++ universalApk true  // If true, also generate a universal APK
+
+5)Testing the release build of your app
+Before uploading the release build to the Play Store, make sure you test it thoroughly. First uninstall any previous version of the app you already have installed. Install it on the device using:
+
+$ react-native run-android --variant=release
+
